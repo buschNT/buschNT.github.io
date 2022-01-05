@@ -1,0 +1,34 @@
+// button
+.btn-linkedin {
+  background-color: $color-linkedin;
+  color: white;
+
+  &:hover {
+    color: darken(white, 10%);
+  }
+}
+
+.btn-github {
+  background-color: white;
+  color: $color-github;
+}
+
+.btn-light {
+  background-color: $color-light-01;
+  color: black;
+
+  &:hover {
+    background-color: darken($color-light-01, 10%);
+    color: black;
+  }
+}
+
+.btn-highlight-01 {
+  background-color: $color-highlight-01;
+  color: white;
+
+  &:hover {
+    background-color: darken($color-highlight-01, 10%);
+    color: white;
+  }
+}

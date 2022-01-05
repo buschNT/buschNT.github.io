@@ -1,0 +1,24 @@
+$color-01: rgb(0, 210, 238);
+$color-02: rgb(71, 76, 112);
+$color-03: rgb(71, 102, 163);
+$color-04: #f2f2f2ff; // f7f2f7ff
+$color-05: #039111ff;
+
+$color-dark-01: darken($color-02, 20%);
+$color-dark-02: darken($color-03, 20%);
+
+$color-light-01: $color-04;
+
+$color-highlight-01: $color-05;
+$color-highlight-02: $color-01;
+
+$color-linkedin: #0082ca;
+$color-github: #333333;
+
+.bg-highlight-01 {
+  background-color: $color-highlight-01;
+}
+
+.bg-highlight-02 {
+  background-color: $color-highlight-02;
+}

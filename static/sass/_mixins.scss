@@ -1,0 +1,29 @@
+@mixin title {
+  display: flex;
+  margin: 0px 25px 10px 25px;
+  align-items: end;
+
+  color: $color-dark-01;
+
+  @media (min-width: 992px) {
+    display: block;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 20px;
+    }
+
+    .pattern {
+      font-weight: bolder;
+    }
+  }
+}

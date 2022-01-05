@@ -1,0 +1,14 @@
+header {
+  color: $color-dark-01;
+
+  position: relative;
+  overflow: hidden;
+
+  padding-bottom: 0px !important;
+
+  .container {
+    .name {
+      color: $color-dark-01;
+    }
+  }
+}

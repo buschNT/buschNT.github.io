@@ -1,0 +1,50 @@
+@import "./mixins";
+
+.contact {
+  .title {
+    @include title;
+
+    display: block;
+    text-align: center;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__subline {
+    text-align: center;
+  }
+
+  &__icon-wrapper {
+    gap: 1.5rem !important;
+
+    @media (min-width: 576px) {
+      gap: 2rem !important;
+    }
+
+    @media (min-width: 768px) {
+      gap: 2.5rem !important;
+    }
+
+    @media (min-width: 992px) {
+      gap: 3rem !important;
+    }
+  }
+
+  .fab {
+    font-size: 3rem;
+
+    @media (min-width: 576px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 5rem;
+    }
+  }
+}

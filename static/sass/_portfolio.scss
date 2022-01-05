@@ -1,0 +1,52 @@
+@import "./mixins";
+
+.portfolio {
+  .title {
+    @include title;
+  }
+
+  .separator {
+    color: $color-highlight-02;
+    font-weight: bolder;
+  }
+
+  hr {
+    color: $color-dark-01;
+    opacity: 1;
+    height: 2px;
+  }
+
+  .box {
+    background-color: $color-light-01;
+    color: $color-dark-01;
+  }
+
+  .box--dark {
+    background-color: $color-dark-01;
+    color: $color-light-01;
+  }
+
+  .box--highlight {
+    background-color: $color-highlight-01;
+    color: $color-light-01;
+  }
+
+  &__image {
+    max-height: 250px;
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+      width: 125%;
+      max-height: 400px;
+    }
+
+    img {
+      width: 100%;
+
+      @media (min-width: 992px) {
+        width: unset;
+        height: 100%;
+      }
+    }
+  }
+}

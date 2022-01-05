@@ -1,0 +1,97 @@
+@import "./mixins";
+
+.education {
+  .title {
+    @include title;
+  }
+
+  .timeline {
+    text-align: center;
+
+    @media (max-width: 768px) {
+      text-align: left;
+
+      ul {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .list-group-item {
+      border: 0px;
+    }
+
+    @media (min-width: 769px) {
+      padding-top: 20px;
+
+      .list-group-item:before {
+        content: "";
+        position: absolute;
+        height: 15px;
+        border-right: 3px dotted $color-dark-01;
+        top: 0;
+      }
+
+      ul {
+        border-top: 4px solid $color-dark-01;
+        border-radius: unset;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding-left: 30px;
+
+      .list-group-item {
+        padding-left: 40px;
+      }
+
+      .list-group-item:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        border-bottom: 3px dotted $color-dark-01;
+        top: 25px;
+        left: 0;
+      }
+
+      ul {
+        flex-direction: column-reverse;
+        border-left: 4px solid $color-dark-01;
+        border-radius: unset;
+      }
+    }
+
+    .timepoint {
+      z-index: 1;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      color: $color-highlight-01;
+    }
+  }
+
+  .box {
+    color: $color-dark-01;
+
+    .list-group-flush > .list-group-item {
+      border-width: 0 0 2px;
+    }
+
+    .list-group-flush > .list-group-item:last-child {
+      border-bottom-width: 0;
+    }
+
+    .list-group-item {
+      border: 2px solid $color-highlight-01;
+      font-size: 1rem;
+    }
+  }
+
+  .sant-jordi {
+    color: $color-highlight-02;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($color-highlight-02, 20%);
+    }
+  }
+}

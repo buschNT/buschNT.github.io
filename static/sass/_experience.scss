@@ -1,0 +1,42 @@
+@import "./mixins";
+
+.experience {
+  .title {
+    @include title;
+  }
+
+  .time {
+    color: $color-highlight-02;
+  }
+
+  .list-group-flush > .list-group-item {
+    border-width: 0 0 2px;
+  }
+
+  .list-group-flush > .list-group-item:last-child {
+    border-bottom-width: 0;
+  }
+
+  .list-group-item {
+    border: 2px solid $color-dark-01;
+  }
+
+  &__image {
+    max-height: 200px;
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+      width: 50%;
+      max-height: 500px;
+    }
+
+    img {
+      width: 100%;
+
+      @media (min-width: 992px) {
+        width: unset;
+        height: 100%;
+      }
+    }
+  }
+}

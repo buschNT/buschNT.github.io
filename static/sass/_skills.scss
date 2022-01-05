@@ -1,0 +1,78 @@
+@import "./mixins";
+
+.skills {
+  .title {
+    @include title;
+  }
+
+  .subtitle {
+    margin-left: 25px;
+  }
+
+  .top-3 {
+    margin: 0px 10px 0px 10px;
+
+    .col-12 {
+      margin-bottom: 5px;
+    }
+
+    .col-12:not(:first-child) {
+      border-top: 2px solid $color-light-01;
+
+      @media (min-width: 992px) {
+        border-top: 0px solid $color-light-01;
+      }
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+
+    .separator {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: $color-highlight-02;
+      margin: 0px 15px 0px 15px;
+    }
+
+    .logo {
+      max-height: 30px;
+    }
+  }
+
+  .number {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: $color-dark-01;
+    margin: 0px 10px 0px 10px;
+
+    @media (min-width: 576px) {
+      font-size: 4.5rem;
+      margin-right: 20px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 5rem;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 8rem;
+    }
+  }
+
+  .box {
+    background-color: $color-light-01;
+    color: $color-dark-01;
+  }
+
+  .box--dark {
+    background-color: $color-dark-01;
+    color: $color-light-01;
+  }
+
+  .box--highlight {
+    background-color: $color-highlight-01;
+    color: $color-light-01;
+  }
+}

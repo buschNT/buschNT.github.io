@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Ziggurat";
+  src: url("../font/Mazeletter/Mazeletter-Ziggurat/mazeletter-ziggurat.woff");
+}
+
+@font-face {
+  font-family: "Utopia";
+  src: url("../font/Mazeletter/Mazeletter-Utopia/mazeletter-utopia.woff");
+}
+
+.quilt {
+  font-family: "Ziggurat", "Utopia", "Wingdings";
+  display: block;
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  text-align: left;
+  font-size: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+
+  color: $color-light-01;
+  //   background-image: linear-gradient($color-dark-01, $color-light-01);
+  background-image: linear-gradient(white, 75%, $color-light-01);
+
+  &--light {
+    color: white;
+    background-image: linear-gradient($color-light-01, 75%, white);
+  }
+
+  &--dark {
+    color: $color-light-01;
+    background-image: linear-gradient($color-dark-01, $color-light-01);
+  }
+}
